@@ -1,0 +1,271 @@
+body {
+background:url(../img/home.jpg) no-repeat ;
+background-size:100% 100%; 
+background-attachment: fixed;} 
+
+.top-box {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: #c9a970;
+    text-align: center;
+    font-size: 28px;
+}
+
+.top-box .heading {
+	font-family:STXinwei;
+	color:white;
+	font-size: 100%;
+	margin:-40px 0 0 0px;
+}
+
+
+a:hover {color:white;}
+a:link {text-decoration: none;}
+a{font-family:Bradley Hand, cursive;
+	color:yellow;
+	cursor:pointer;
+        display:block;
+        padding:0 50px;
+}
+
+
+
+.tablepages {
+    width: 100%;
+    height: 30px;
+    line-height: 100px;
+    background-color: brown;
+    font-size: 20px;
+}
+
+.opentime {
+    width: 100%;
+    height: 35px;
+    line-height: 100px;
+    background-color: grey;
+    font-size: 20px;
+}
+
+.reminder .p {
+    color: red;
+    font-size: 20px;
+}
+
+
+
+.form1
+  {
+  font-family:Bradley Hand, cursive;
+  height:50px;
+  vertical-align:bottom;
+  background-color:purple;
+  color:white;
+  }
+
+body {
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+}
+
+
+
+
+.reminder h2 {
+  font-size: 10px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  background: transparent;
+}
+
+
+.reminder h1 {
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background: transparent;
+}
+
+
+
+
+
+
+.container {
+  margin:20px 0 0 5px;
+}
+.login {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+}
+.login h1 {
+  margin: -20px -20px 21px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  background: transparent;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+
+input[type=submit] {
+  padding: 0 18px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #527881;
+  text-shadow: 0 1px #e3f1f1;
+}
+
+
+
+
+
+
+
+/* Border styles */
+#table-1 thead, #table-1 tr {
+border-top-width: 1px;
+border-top-style: solid;
+border-top-color: rgb(230, 189, 189);
+}
+#table-1 {
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: rgb(230, 189, 189);
+}
+
+/* Padding and font style */
+#table-1 td, #table-1 th {
+padding: 5px 10px;
+font-size: 12px;
+font-family: Verdana;
+color: rgb(177, 106, 104);
+}
+
+/* Alternating background colors */
+#table-1 tr:nth-child(even) {
+background: rgb(238, 211, 210)
+}
+#table-1 tr:nth-child(odd) {
+background: #FFF;
+
+
+
+
+
+
+.right-box{
+    background-color:  transparent;
+    margin-left: 50px;
+    padding: 20px;
+    min-height: 100px;
+		font-size:15px;
+		color:white;
+	font-family:"MS Serif", "New York", serif;
+		
+}
+
+.right-box table td{
+    border:1px solid #2d060f;
+    padding: 10px 0;
+    text-align: center;
+
+}
+.right-box input[type=text], input[type=password], input[type=number] {
+  margin: 5px;
+  padding: 0 10px;
+  width: 200px;
+  height: 25px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  outline: 1px solid #eff4f7;
+}
+
+
+
+
+
+	.div_c_l {
+		float: center;
+		padding: 0px;
+		font-size: 15px;
+		font-weight: 100;
+		font-family:Bradley Hand, cursive;
+	}
+	
+	.div_c_l span {
+		line-height: 10px;
+		padding: 0 20px;
+		width: 0px;
+	}
+	
+	.div_c_l img {
+		height: 10px;
+		margin: 2px;
+		padding: 0px 0px;
+
+	}
+	
+	.div_c_r {
+		float: right;
+		padding: 5px;
+		width: calc(100% - 0px);	
+
+	}
+	
+	.div_c_r input {
+		border: 0px;
+		margin: 5px;
+		float: right;
+		line-height: 28px;
+		font-size: 10px;
+		text-align: right;
+		padding-right: 5px;
+		width: 100%;
+		outline: none;
+		text-align: left;
+	}
+	
+
+	.div_f {
+		border-bottom: 1px solid #E8E8E8;
+		background-color: white;
+	}
+
+	.btn_1 {
+		border: none;
+		margin: 0px 0% 0px 0%;
+		width: 100%;
+		height: 1.8em;
+		background-color: #05a0e0;
+		border-radius: 10px;
+		font-size: 20px;
+		color: #FFFFFF;
+		outline: none;
+		-webkit-tap-highlight-color: transparent;	
+		}	
+		
+.table2{
+float:left;margin-top:40px;margin-right:1px;}
+
+.open{
+	color:white;
+	text-align:center;
+	height:50px;
+    width:400px;
+	font-family:Brush Script MT;
+	font-size: 250%;
+	word-break : break-all;
+	line-height:1.2;
+	}
+.footer .xhlbtn{display:block;text-align:center;line-height:50px;background-color:#F03C03;padding:0 0px;color:#fff;font-weight:bold;}
+
+  
