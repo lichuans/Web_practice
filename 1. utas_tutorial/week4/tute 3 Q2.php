@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <?php
+            $a = array(
+                "Jersey"=> array(
+                    "Monday"=>2, "Tuesday"=>8, "Wednesday"=>4, "Thursday"=>2,
+                    "Friday"=>4),
+                "Pete"=> array(
+                    "Monday"=>0, "Tuesday"=>0, "Wednesday"=>3, "Thursday"=>8, "Friday"=>8),
+                "Joel"=> array(
+                    "Monday"=>4, "Tuesday"=>6, "Wednesday"=>4, "Thursday"=>4, "Friday"=>4),
+                "Martin"=> array(
+                    "Monday"=>8, "Tuesday"=>8, "Wednesday"=>8, "Thursday"=>8, "Friday"=>8)
+            );
+        
+            echo "Time Spent on Viewing Forum Last week\n\n<br><br>";
+        
+            foreach ($a as $key=> &$value){
+                echo"{$key}<br>";
+                $value = array_map("wahaha", $value);
+                foreach ($value as $k=> $v){
+                    echo $k.":".$v."<br>";
+                }
+                echo "<br>";
+            }
+        
+            function wahaha ($value){
+                switch ($value){
+                    case 0:
+                        $value = " Vry Rare({$value})";
+                    break;
+                    
+                    case 2:
+                        $value = " Rare({$value})";
+                    break;
+                    
+                    case 3:
+                        $value = " Rare({$value})";
+                    break;
+                        
+                    case 4:
+                        $value = " Normal({$value})";
+                    break;
+                        
+                    case 6:
+                        $value = " Frequent({$value})";
+                    break;
+                        
+                    case 8:
+                        $value = " Very Frequent({$value})";
+                    break;
+                        
+                    default:
+                    break;
+                }
+                return $value;
+            }
+        ?>
+    </body>
+</html>

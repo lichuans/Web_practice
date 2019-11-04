@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="./tute2-2.css">
+</head>
+<body>
+	 
+	<input id="homer" type="checkbox">
+	<label for="homer">Homer Simpson</label>
+	<input id="marge" type="checkbox">
+	<label for="marge">Marge Simpson</label>
+	<input id="bart" type="checkbox">
+	<label for="bart">Bart Simpson</label>
+	<input id="lisa" type="checkbox">
+	<label for="lisa">Lisa Simpson</label>
+	<input id="maggie" type="checkbox">
+	<label for="maggie">Maggie Simpson</label>
+	<br/><br/>
+	<!--Homer here-->
+	<div id="div1"></div>
+	<!--Marge here--> 
+	<div id="div2"></div>	 
+	<!--Bart here-->
+	<div id="div3"></div>
+	<!--Lisa here-->
+	<div id="div4"></div>
+	<!--Maggie here-->
+	<div id="div5"></div>	 
+	<script>
+	
+	
+ 	$("#homer").click(function(){
+		if (this.checked){
+    	$("#div1").append("<img src=img/Homer_Simpson.png>");
+		}
+		else {
+		$("#div1").empty();
+		}
+	});
+	
+	$("#marge").click(function(){
+		if (this.checked){
+    	$("#div2").append("<img src=img/Marge_Simpson.png>");
+		}
+		else {
+		$("#div2").empty();
+		}
+	});
+	
+	$("#bart").click(function(){
+		if (this.checked){
+    	$("#div3").append("<img src=img/Bart_Simpson.png>");
+		}
+		else {
+		$("#div3").empty();
+		}
+	});
+				
+	$("#lisa").click(function(){
+		if (this.checked){
+    	$("#div4").append("<img src=img/Lisa_Simpson.png>");
+		}
+		else {
+		$("#div4").empty();
+		}
+	});	
+	
+	$("#maggie").click(function(){
+		if (this.checked){
+    	$("#div5").append("<img src=img/Maggie_Simpson.png>");
+		}
+		else {
+		$("#div5").empty();
+		}
+	});			
+	</script>
+					
+
+</body>
+</html>

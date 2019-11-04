@@ -1,0 +1,44 @@
+----First Code---- 
+
+<form action="logincheck.php" method="post">  
+    Username£º<input type="text" name="username"/>  
+    <br />  
+    Password£º<input type="password" name="password"/>  
+    <br />  
+    <input type="submit" name="submit" value="Sign Up"/>   
+</form>
+
+
+----Second Code----
+
+<?php
+ $user = $_POST['username'];
+ $password = $_POST['password'];
+ $sub= $_POST['submit'];
+
+if (isset($sub)){
+ $servername = 'localhost';
+ $username = '______';
+ $passwords = '______';
+ $dbname = '_____';
+ 
+ $conn = new mysqli($servername,$username,$passwords,$dbname);
+ $sql = "INSERT INTO `users` (`username`, `password`) VALUES ('$user','$password')";
+ $conn ->query($sql);
+ if($conn){
+  echo "recording already insert";
+ }
+ else{
+  echo mysql_error();
+ }
+ $conn ->close();
+ echo "you have successfully registered your account";
+ echo "<br>";
+ echo "username:";
+ echo "$user";
+ echo "<br>";
+ echo "password:";
+ echo "$password";
+}
+
+?>

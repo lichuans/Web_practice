@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="./tute2-1.css">
+</head>
+
+
+<body>
+<ul> 
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+</ul>
+
+<form><input type=button value="Refresh" onClick="window.location.reload()"></form><br/>
+
+
+<div>Nothing removed</div>
+
+
+<script>
+
+$(document).ready(function(){
+  $("li").click(function(){
+    $(this).hide();
+	i=$(this).index()+1;
+	$("div").text('Item '+i+' is removed.');
+	});
+
+});	
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Tutorial9</title>
+	 <script src="http://code.jquery.com/jquery-latest.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript">
+      function setup_country_change(){
+         //check whether country section is changed.
+         $('#country').change(update_cities);
+      }
+      
+      function update_cities(){
+         //assigns the selected country to country variable.
+         var country = $('#country').val();
+         $('#output').hide();
+         //get_cities.php performs when the country is selected.
+         //call the function(show_cities) when the data is returned from get_cities.php.
+         $.get('get_cities.php?country='+country,show_cities);
+      }
+      
+      function show_cities(cities){
+         //returned data from get_cities.php is assigned to cities
+	     //change the field(drop down list)
+         $('#cities').html(cities);
+      }
+			
+      //When the page is loaded, function (setup_country_change())is called.
+      $(document).ready(setup_country_change);
+   
+   </script>
+			
+			<script type="text/javascript">
+      function setup_cities_change(){
+         //check whether country section is changed.
+         $('#cities').change(update_population);
+      }
+			
+      function update_population(){
+         //assigns the selected country to country variable.
+          var city = $('#city').val();
+					$('#output').show();
+         //get_cities.php performs when the country is selected.
+         //call the function(show_cities) when the data is returned from get_cities.php.
+         $.get("./checker.php",{city: city},show_population);
+      }
+			
+      function show_population(data){
+         //returned data from get_cities.php is assigned to cities
+	     //change the field(drop down list)
+         $('#output').html(data);
+      }
+			$(document).ready(setup_cities_change);
+			</script>
+			
+</head>
+
+<body>
+   <h3>Tutorial9</h3>
+   <form id="select_country" name="select_country" method="" action="#">
+      <table>
+         <tr>
+            <th>Country: </th>
+            <td>
+               <select name="country" id="country">
+                  <option value="" selected="selected">Please Select Country</option>
+                  <option value="au">Australia</option>
+                  <option value="uk">United Kingdom</option>                  
+                  <option value="us">United States</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <th>Cities: </th>
+            <td id="cities"></td>
+         </tr>
+         <tr>
+            <th>Population: </th>
+            <td id="population"><label id="output" for="cities"></label></td>
+				 </tr>
+      </table>
+   </form>
+</body>
+</html>
