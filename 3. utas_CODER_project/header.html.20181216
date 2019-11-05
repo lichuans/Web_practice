@@ -1,0 +1,92 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CODER</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="assets/css/main.css?v={<?php echo time() ?>}"/>
+    <link rel="stylesheet" href="assets/js/thirdParty/rating/themes/bars-square.css?v={<?php echo time() ?>}">
+<link rel="stylesheet" href="assets/css/index.css?v={<?php echo time() ?>}">
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/thirdParty/rating/jquery.barrating.min.js"></script>
+    <script src="assets/js/thirdParty/rating/examples.js"></script>
+
+</head>
+<body class="subpage">
+
+<!-- Header -->
+<header id="header">
+    <div class="logo"><a href="index.php">Coder <span>by UTAS</span></a></div>
+    <a href="#menu">Menu</a>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links t1 fl">
+        <li><a href="index.php">Home</a></li>
+        <li onmouseover="show(this)" onmouseleave="hide()"><a href="#">About Us</a>
+            <ul class="secondary t2"  style="list-style-type:none">
+                <li>
+                    <a href="AboutCoder.php">About Coder</a>
+                </li>
+                <li>
+                    <a href="OurTeam.php">Our Team</a>
+                </li>
+                <li>
+                    <a href="ContactUs.php">Contact Us</a>
+                </li>
+            </ul>
+        </li>
+        <li onmouseover="show(this)" onmouseleave="hide()"><a href="#">Students & Mentors</a>
+            <ul class="secondary t2"  style="list-style-type:none">
+                <li>
+                    <a href="Students.php">Students</a>
+                </li>
+                <li>
+                    <a href="Mentors.php">Mentors</a>
+                </li>
+                <li>
+                    <a href="applyform.php">Apply Now</a>
+                </li>
+            </ul>
+        </li>
+        <li onmouseover="show(this)" onmouseleave="hide()"><a href="#">Partners</a>
+            <ul class="secondary t2"  style="list-style-type:none">
+                <li>
+                    <a href="Partner_main_Ex.php">External Partners</a><!--可以使用get传值的方式 控制页面展示 external partners-->
+                </li>
+                <li>
+                    <a href="Partner_main_In.php">Internal Partners</a><!--可以使用get传值的方式 控制页面展示 internal partners-->
+                </li>
+                <li>
+                    <a href="Partner_Application.php">Apply to be a partner</a><!--可以使用get传值的方式 控制页面展示 internal partners-->
+                </li>
+            </ul>
+        </li>
+        <li onmouseover="show(this)" onmouseleave="hide()"><a href="#">Project</a>
+            <ul class="secondary t2"  style="list-style-type:none">
+                <li>
+                    <a href="project_list.php?type=NEW">New Projects</a>
+                </li>
+                <li>
+                    <a href="project_list.php?type=CURRENT">Current Projects</a>
+                </li>
+                <li>
+                    <a href="project_list.php?type=PAST">Past Projects</a>
+                </li>
+            </ul>
+        </li>
+        <li onmouseover="show(this)" onmouseleave="hide()"><a href="SuccessStory.php">Success Stories</a></li>
+        <li onmouseover="show(this)" onmouseleave="hide()"><a href="login.php">Admin</a></li>
+    </ul>
+</nav>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/myScript.js"></script>

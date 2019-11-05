@@ -1,0 +1,95 @@
+<?php
+/**
+ * Generate Project list dynamically
+ * Created by Jing Effie Liu
+ * Date: 2018/11/18
+ */
+session_start();
+//connect the database
+include_once 'dba.php';
+mysqli_set_charset($conn, 'utf8');
+$projects = '';
+
+
+// check the connection with the database
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} else {
+
+
+//read and display projects
+    $sql = "SELECT ID, Name, StartDate, EndDate, Description, Picture FROM Project ";
+    switch ($title) {
+        case 'NEW':
+            $sql .= 'WHERE Category = 0 '; //WHERE utc_date() < StartDate ';
+            break;
+        case 'CURRENT':
+            $sql .=  'WHERE Category = 1 '; // 'WHERE utc_date() BETWEEN StartDate AND EndDate ';
+            break;
+        case 'PAST':
+            $sql .=  'WHERE Category = 2 '; // 'WHERE utc_date() > EndDate ';
+            break;
+        case 'all':
+            break;
+    }
+    $sql .= " ORDER BY id DESC ";
+    $result = mysqli_query($conn, $sql);
+    if (!$result) {
+        echo $sql;
+        printf("Error: %s\n", mysqli_error($conn));
+    } else {
+        if ($result->num_rows < 1) {
+            $projects = "no any ".$title." project currently ";
+        } else 
+
+      {
+$time=1;
+echo "<div class='projectlist'>";
+echo " <ul>";
+while ($row = mysqli_fetch_array($result) and $time<=3) {
+
+$picture=$row['Picture'];
+$name=$row['Name'];
+$description=$row['Description'];
+$startdate=$row['StartDate'];
+$enddate=$row['EndDate'];
+$id=$row['ID'];
+
+
+echo "<li style='margin-bottom:30px'>";
+echo "<div>";
+echo "<img src='$picture' alt='$name'/>";
+echo "<br><br>";
+echo "</div>";
+
+echo "<div class='projectcontent'>";
+echo "<header> ";
+echo "<h2>" . $name . "</h2>";
+echo "</header>";
+echo "<p>" . substr($description, 0, 161) . "...</p>";
+echo "<footer>";
+echo "<p1>" . $startdate . ' ~ ' . $enddate . "</p1> ";
+echo "<br><br>";
+echo "<a href=\"project_details.php?pid=$id\">Learn More</a>";
+echo "<br><br>";
+echo "</footer>";
+echo "</div>";
+
+echo "</li>";
+
+$time++;
+ }
+
+echo "</ul>";
+echo "</div>";
+
+
+        }
+    }
+}
+
+echo "<div class='readmore'>";
+echo "<p style=\"text-align:right; width:100%\"><a href='project_list.php'>Read More>></a></p>";
+echo "</div>";
+$conn->close();
+?>
