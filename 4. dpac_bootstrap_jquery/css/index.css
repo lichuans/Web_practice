@@ -1,0 +1,85 @@
+
+
+.container-fluid {
+padding-right:15px;
+padding-left:15px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.row{
+   display: table-cell;
+   vertical-align: middle;
+}
+
+.col-md-2 a{
+text-decoration: none;
+ color: white;
+}
+
+.col-md-2 a:hover{
+ color: #fa943f;
+}
+
+.col-md-6 a{
+ color: #c03838;
+}
+
+.col-md-6 a:hover{
+
+ color: white;
+}
+
+.links a{
+color:black;
+}
+
+.links2 {
+text-align:center;
+}
+.links2 a{
+color:red;
+}
+.links2 a:hover{
+ color: black;
+}
+.media .media-body .date p1{
+ color: red;
+}
+.media .media-body .date .span{
+ color: blue;
+}
+.media .media-body a{
+ color: blue;
+}
+.media .media-body p2{
+ font-size: 8px;
+}
+
+.container-fluid {
+   display:table;
+   height:100%; 
+}
+
+.row{
+   display: table-cell;
+   vertical-align: middle;
+}
+
+
+.media .media-body .title a{
+ color: black;
+   vertical-align: middle;
+   font-size:18px;
+   text-align:center;
+}
+.media .media-body .title a:hover{
+   background: rgb(249, 249, 249);
+   text-decoration: none;
+   
+.glyphicon glyphicon-comment{
+color:blue;
+}
+
+
+

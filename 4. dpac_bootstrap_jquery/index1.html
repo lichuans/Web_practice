@@ -1,0 +1,627 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mock web by harry</title>
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/mdb.min.css" rel="stylesheet">
+<link href="css/mdb.css" rel="stylesheet">
+<link href="css/index3.css?v={<?php echo time()?>}" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+
+<body>
+
+<div class="stage m-auto">
+<div class="container">
+
+<!-- top section --!>
+<div id="fadein1" class="row" style="background:white;height:75px;display:none">
+
+<div class="col-md-11"><a href="/"><img  id="ipac" src="img/ipacblack.png" style="width:110px; height:60px;padding:7px;"></a></div>
+
+<!-- weather section --!>
+<div class="col-md-1" style="line-height:90%;">
+<p><i class="fas fa-cloud-sun"></i>&nbsp<span id="testDiv"></span></p>
+<p><i class="fas fa-thermometer-three-quarters"></i>&nbsp&nbsp&nbsp&nbsp<span id="testDiv2"></span></p>
+<p><i class="fas fa-wind"></i>&nbsp&nbsp<span id="testDiv3"></span></p>
+</div>
+
+
+
+</div><!-- top section --!>
+
+<!-- NAV section --!>
+<div id="fadein2" class="row" style="color:black;display:none">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="width:100%;">
+<a class="navbar-brand" href="#"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="padding-right:70px;background:black;">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="padding-right:70px;">
+          Department
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+         </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="padding-right:70px;">ipac News</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-right:70px;">
+          Culture
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-right:70px;">
+          Useful sites
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+</div>
+
+<!-- main front image section --!>
+<div id="fadein3" class="row" style="height:175px;background-image:url(img/Brad_Harris_4.jpg);background-repeat: no-repeat;background-position:center 0;margin-bottom:20px;display:none;">
+
+<!-- SEARCH section --!>
+<div class="row" style="width:60%;position:absolute; margin-top:100px;margin-left:100px;>
+<input type="text" placeholder="Search" style="width:90%;background:green;">
+
+<div class="row"><button class="fas fa-search" type="submit" style="width:50px;height:38px;"></button></div>
+
+</div><!-- SEARCH section --!>
+</div><!-- Main front image section --!>
+
+<!-- Main body section --!>
+<div class="row" style="">
+
+<!-- LEFT section --!>
+<div class="col-lg-8 col-sm-12">
+
+<!-- mainstory --!>
+<div id="storymain">
+<div id="effect" class="col-sm-12" style="display:none">
+<h2><a href="" style="color:black;">Positive Public Health messages going global on social media!</a></h2>
+</div><!-- col-sm-12--!>
+
+<div id="effect2" class="row" style="display:none">
+<div class="col-md-7 col-xs-4">
+<img alt="" class="img-responsive" src="img/strength.PNG" style="
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;">
+</div><!-- col-md-7 --!>
+
+<div class="col-md-5 col-xs-8 minus-left-gutter">
+  <div style="display:inline">
+ <span class="s-date" style="color:#ce362f">03 Jan 2019</span>
+ <span id="431251" class="glyphicon glyphicon-heart like" url="">
+                <span class="count">5</span>
+            </span>	
+
+        <p>Video format is popular on social mediaParents today are using social media more and more to get and share parenting advice and tips. Video format is visual, and by combining plain language and relevant images, we can get across easy to understand messages direct to the reader. Social media also...</p>
+    </div>
+    </div>
+</div><!-- row --!>
+</div><!-- story main --!>
+<hr noshade style="opacity:0.1;">
+
+
+<!-- small story1 --!>
+<div id="fadein6" class="media" style="display:none;text-align:justify;">
+<!-- picture--!>
+<div class="m-auto" style="width:250px;height:125px;">
+<img alt="" class="img-responsive" src="img/reduced3.png" style="width:100%;">
+</div><!-- picture--!>
+<div class="media-body" style="padding-left:30px;">
+<h2><a href="" style="font-size:20px;">Ipac - new look, new features!</a></h2>
+<div style="display:inline;">
+<span class="s-date">20 Dec 2018  </span>
+</div><br>
+Yes, ipac looks a little different... but the functions and features we use every day are still here!
+</div>  <!-- media body--!>
+</div>
+<hr noshade style="opacity:0.1;">
+
+<!-- small story2 --!>
+<div id="fadein7" class="media" style="display:none;">
+<!-- picture--!>
+<div class="m-auto" style="width:250px;height:125px;">
+<img alt="" class="img-responsive" src="img/reduced1.jpg" style="width:100%;">
+</div><!-- picture--!>
+<div class="media-body" style="padding-left:30px;">
+<h2><a href="" style="font-size:20px;">Ipac - new look, new features!</a></h2>
+<div style="display:inline;">
+<span class="s-date">20 Dec 2018  </span>
+</div><br>
+Yes, ipac looks a little different... but the functions and features we use every day are still here!
+</div>  <!-- media body--!>
+</div>
+<hr noshade style="opacity:0.1;">
+
+
+<!-- small story3 --!>
+<div id="fadein8" class="media" style="display:none;">
+<!-- picture--!>
+<div class="m-auto" style="width:250px;height:125px;">
+<img alt="" class="img-responsive" src="img/reduced2.jpg" style="width:100%;">
+</div><!-- picture--!>
+<div class="media-body" style="padding-left:30px;">
+<h2><a href="" style="font-size:20px;">Ipac - new look, new features!</a></h2>
+<div style="display:inline;">
+<span class="s-date">20 Dec 2018  </span>
+</div><br>
+Yes, ipac looks a little different... but the functions and features we use every day are still here!
+</div>  <!-- media body--!>
+</div>
+<hr noshade style="opacity:0.1;">
+
+<!-- small story4 --!>
+<div id="fadein14" class="media" style="display:none;">
+<!-- picture--!>
+<div class="m-auto" style="width:250px;height:125px;">
+<img alt="" class="img-responsive" src="img/reduced.jpg" style="width:100%;">
+</div><!-- picture--!>
+<div class="media-body" style="padding-left:30px;">
+<h2><a href="" style="font-size:20px;">Ipac - new look, new features!</a></h2>
+<div style="display:inline;">
+<span class="s-date">20 Dec 2018  </span>
+</div><br>
+Yes, ipac looks a little different... but the functions and features we use every day are still here!
+</div>  <!-- media body--!>
+</div>
+<hr noshade style="opacity:0.1;">
+
+
+
+
+<!-- 3 button--!>
+<div id="fadein17" style="display:none;float:right;opacity:0.7;margin-bottom:100px;">
+<button type="button" class="" style="background:white;margin:5px;">
+<span class="fas fa-calendar-alt" aria-hidden="true"></span>
+Submit Event
+</button>
+
+<button type="button" class="" style="background:white;margin:5px;">
+<span class="fas fa-pencil-alt" aria-hidden="true"></span>
+ Submit a story
+</button>
+
+<button type="button" class="" style="background:white;margin:5px;">
+<span class="fas fa-newspaper" aria-hidden="true"></span>
+All news
+</button>
+</div><!-- 3 button--!>
+</div><!-- col-sm-8--!>
+
+
+
+<!-- RIGHT section --!>
+<div class="col-lg-4 col-sm-12" style="line-height: 2;">
+
+<hr noshade style="margin:5px;opacity:0.2;">
+<div id="fadein9" class="media" style="display:none">
+
+<div class="m-auto" style="width:150px;height:150px;">
+<span class="badge" style="position:absolute; margin-top: -7px; margin-left:-7px; background-color:#ce362f;display:">NEW</span> 
+<img class="img-responsive newitem" src="img/ruth.jpg">
+</div>
+
+<div class="media-body" style="padding-left:30px;">
+<h1>ExecDirect.</h1>
+<h2><a href="" class="flagged" style="font-size:25px;">IPAA Public Sector Excellence Awards </a></h2>
+<span class="date">21 Dec 2018</span>
+</div><!-- media body --!>
+</div>
+<hr noshade style="margin:5px;opacity:0.2;">
+
+
+<!-- 4 section --!>
+<div id="fadein10" class="row" style="display:none">
+
+<div id="effect4" class="col-md-12 media" style="">
+<div class="m-auto" style="">
+<img style="" src="img/ess.png">
+</div>
+<div class="media-body m-auto">
+<h2><a href="" class="" style="font-size:18px;color:black;margin:20px;">Employee Self Service</a></h2>
+</div><!-- media body --!>
+</div><!-- media1 --!>
+<hr noshade style="margin:5px;">
+
+<div id="effect5" class="col-md-12 media" style="">
+<div class="m-auto" style="">
+<img style="" src="img/its.png">
+</div>
+<div class="media-body m-auto">
+<h2><a href="" class="" style="font-size:18px;color:black;margin:20px;">IT Support and Services</a></h2>
+</div><!-- media body --!>
+</div><!-- media1 --!>
+<hr noshade style="margin:5px;">
+
+
+<div id="effect6" class="col-md-12 media" style="">
+<div class="m-auto" style="">
+<img style="" src="img/whs.png">
+</div>
+<div class="media-body m-auto">
+<h2><a href="" class="" style="font-size:18px;color:black;margin:20px;">Health, Safety &amp; Wellbeing</a></h2>
+</div><!-- media body --!>
+</div><!-- media1 --!>
+<hr noshade style="margin:5px;">
+
+<div id="effect7" class="col-md-12 media" style="">
+<div class="m-auto" style="">
+<img style="" src="img/ipac.png">
+</div>
+<div class="media-body m-auto">
+<h2><a href="" class="" style="font-size:18px;color:black;margin:20px;">ilearn</a></h2>
+</div><!-- media body --!>
+</div><!-- media1 --!>
+
+</div><!-- 4 section --!>
+<hr noshade style="margin:5px;opacity:0.2;">
+
+<!-- carousel --!>
+<div id="fadein11" class="carousel slide" data-ride="carousel" style="display:none">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/DPACvalues.png" style="width:100%;">
+    </div>
+    <div class="carousel-item">
+      <img src="img/WhiteRibbon.png" style="width:100%;">
+    </div>
+    <div class="carousel-item">
+      <img src="img/WhatWorksForMe.png" style="width:100%;">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="fas fa-angle-left"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="fas fa-angle-right"></span>
+  </a>
+</div>
+
+  <!-- Share feedback -->
+
+<div id="fadein12" class="col-md-12" style="background:#0076bc;padding:15px;display:none">
+       <h4 class="my-auto" style="color:white;font-weight:bold;">Help improve ipac  
+<a class="btn btn-default m-auto" href="#" style="float:right;
+    border-radius: 4px;
+    background-color: white;
+    font-weight: bold;padding:7px 7px;">Share Feedback</a></h4>
+    </div>
+
+
+  <!-- links section -->
+<div id="fadein13" style="display:none">
+<br><h4 class="flipthree">Resource<span class="fas fa-angle-down" aria-hidden="true" style="float:right"></span></h4>
+<div class="links2" id="panelthree" style="display:none;">
+<a href="#">How do I search ipac?</a><br>
+<a href="#">How do I use The Feed?</a><br>
+<a href="#">Where should I post my news?</a><br>
+</div><hr noshade style="opacity:0.1;">
+<h4 class="flipone">Quick Links<span class="fas fa-angle-down" aria-hidden="true" style="float:right"></span></h4>
+<div class="links" id="panelone" style="display:none;">
+<a href="#">Templates</a><br>
+<a href="#">Policies</a><br>
+<a href="#">Writing guide</a><br>
+<a href="#">Forms</a>
+<a href="#">Security Procedures</a><br>
+<a href="#">Job opportunities</a><br>
+<a href="#">Staff Movements</a><br>
+<a href="#">Media Library</a>
+</div><hr noshade style="opacity:0.1;">
+
+
+  <!-- RSS FEED section -->
+<h4 class="fliptwo">Feed<span class="fas fa-angle-down" aria-hidden="true" style="float:right"></span></h4>
+<div id="paneltwo" style="display:none;">
+
+</div><hr noshade style="opacity:0.1;">
+
+
+
+<h4>Events calendar</h4>
+<div class="col-md-12" style="margin-left:10px; line-height: 2;
+">
+<span style="color: #CE362F">26 Jan </span>| <a role="button" data-toggle="popover" title="Australia Day" data-content="26 Jan">Australia Day</a><br>
+<span style="color: #CE362F">26 Jan </span>| <a role="button" data-toggle="popover" data-placement="left" title="Australia Day" data-content="26 Jan" >Australia Day</a><br>
+<span style="color: #CE362F">26 Jan </span>| <a role="button">Australia Day</a>
+</div>
+
+<div class="text-center"><a href="#">See all events</a><br></div>
+</div>
+</div>
+
+
+
+</div><!-- col-sm-4 --!>
+
+
+</div><!-- End of Main body section row div --!>
+
+<!-- BLANK section --!>
+<div class="row" style="background:#fbfcfc;height:200px;"></div>
+</div>
+</div></div>
+
+<!-- footer --!>
+<footer id="fadein15" style="padding:80px;color:white;background:black;display:none;">
+<div class="row" >
+
+<div class="col-md-2">
+<ul class="footerUL">
+<li><a href="#">ipac News</a></li>
+<li><a href="#">ITS Support</a></li>
+<li><a href="#">Employee Self Service</a></li>
+<li><a href="#">ipac Editor Access</a></li>
+</ul>
+</div>
+
+<div class="col-md-6" style="border-left:1px solid #fff;border-right: 1px solid #fff">
+<p>You are directed to information on how your <a href="#" style="color: red;">personal information</a> is protected. You are directed to a <a href="#" style="color: red;">disclaimer and copyright</a> notice governing the information provided.</p>
+<p>The page has been produced by The Department of Premier and Cabinet.</p>
+</div>
+
+<div class="col-md-2" style="background:black;">
+<ul class="footerUL">
+<li><a href="#">Tasmania Online</a></li>
+<li><a href="#">Service Tasmania</a></li>
+<li><a href="/">Home</a></li>
+<li><a href="#">Feedback</a></li>
+</ul>
+</div>
+                        
+<div class="col-md-2" style="background:black;">
+<a href="#"><img class="TasGovLogo" src="img/tasgovlogo.jpg" style="float:right;"></a>
+</div>
+
+</div><!-- row --!>
+</footer>
+<style>
+body{
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 10.5pt;
+    background-color: #fbfcfc;
+    line-height: 1.42857143;
+}
+.stage{
+}
+.container{
+  background:white;
+max-width: 88.5%;
+}
+.row{
+}
+.col-sm-8{
+    margin-bottom: 30px
+background-color:green;
+}
+.col-sm-4{
+    
+}
+footer{
+background: #111111;
+}
+h2 {
+font-size:28px;
+}
+img {
+width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;}
+footer a{
+color: white;
+}
+hr {
+display:none;
+}
+#ipac {
+-webkit-transition: -webkit-transform 0.1s;
+}
+#ipac:hover{
+-webkit-transform:rotate(-10deg);
+
+}
+
+</style>
+
+<script src="js/script.js"></script>
+<script type="application/javascript" src="js/bootstrap.min.js"></script>
+<script type="application/javascript" src="js/bootstrap.js"></script>
+<script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="application/javascript" src="js/popper.min.js"></script>
+<script type="application/javascript" src="js/mdb.js"></script>
+<script type="application/javascript" src="js/mdb.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script src="js/script4.js"></script>
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="application/javascript" src="js/jquery-ui.js"></script>
+
+<script> 
+$(document).ready(function(){
+  $(".flipone").click(function(){
+    $("#panelone").slideToggle("fast");
+  });
+});
+
+$(document).ready(function(){
+  $(".fliptwo").click(function(){
+    $("#paneltwo").slideToggle("fast");
+  });
+});
+
+$(document).ready(function(){
+  $(".flipthree").click(function(){
+    $("#panelthree").slideToggle("fast");
+  });
+
+    $("#fadein1").fadeIn();
+    $("#fadein2").fadeIn(1000);
+    $("#fadein3").fadeIn(2000);
+    $("#fadein4").fadeIn(3000);
+    $("#fadein5").fadeIn(3500);
+    $("#fadein6").fadeIn(3000);
+    $("#fadein7").fadeIn(3000);
+    $("#fadein8").fadeIn(3000);
+    $("#fadein9").fadeIn(2000);
+    $("#fadein10").fadeIn(3000);
+    $("#fadein11").fadeIn(3000);
+    $("#fadein12").fadeIn(3000);
+    $("#fadein13").fadeIn(3000);
+    $("#fadein14").fadeIn(3000);
+    $("#fadein15").fadeIn(3000);
+    $("hr").fadeIn("4000");
+    $("#fadein16").fadeIn(3000);
+    $("#fadein17").fadeIn(3000);
+
+  $("#fadein6").mouseover(function(){
+  $("#fadein6").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#fadein6").mouseout(function(){
+  $("#fadein6").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+
+  $("#fadein7").mouseover(function(){
+  $("#fadein7").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#fadein7").mouseout(function(){
+  $("#fadein7").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+
+  $("#fadein8").mouseover(function(){
+  $("#fadein8").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#fadein8").mouseout(function(){
+  $("#fadein8").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+
+  $("#fadein14").mouseover(function(){
+  $("#fadein14").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#fadein14").mouseout(function(){
+  $("#fadein14").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+  $("#fadein9").mouseover(function(){
+  $("#fadein9").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#fadein9").mouseout(function(){
+  $("#fadein9").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+
+  $("#effect4").mouseover(function(){
+  $("#effect4").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#effect4").mouseout(function(){
+  $("#effect4").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+
+  $("#effect5").mouseover(function(){
+  $("#effect5").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#effect5").mouseout(function(){
+  $("#effect5").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+
+  $("#effect6").mouseover(function(){
+  $("#effect6").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#effect6").mouseout(function(){
+  $("#effect6").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+
+  $("#effect7").mouseover(function(){
+  $("#effect7").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#effect7").mouseout(function(){
+  $("#effect7").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+
+
+  $("#storymain").mouseover(function(){
+  $("#storymain").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#storymain").mouseout(function(){
+  $("#storymain").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+
+  $("#rss").mouseover(function(){
+  $("#rss").css({"background-color":"#fbfcfc","transform":"scale(1.05)"});
+  });
+  $("#rss").mouseout(function(){
+  $("#rss").css({"background-color":"white","transform":"scale(1.0)"});
+  });
+
+
+
+});
+
+</script>
+
+
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script>
+$(document).ready(function(){
+      $( "#effect" ).show( "bounce", {times: 4,distance: 20}, 400);        
+      $( "#effect2" ).show( "bounce", {times: 4,distance: 20}, 400);        
+
+         });
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+  </script>
+
+</body>
+</html>
